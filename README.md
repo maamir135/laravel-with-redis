@@ -62,3 +62,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+<!-- Redis setup -->
+1- initialize redist-stack with docker commands
+2- configure the redis from larvel doc redis
+3- change config in database.php with "predis" and change the value in env file
+4- open redis dashboard with redis port "localhost:portname"
+<!-- end redis setup  -->

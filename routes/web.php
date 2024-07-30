@@ -12,24 +12,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/amir', function () {
-//     session(['cart' => [
-//         [
-//             "item" => "RTX 10",
-//             "price" => 1000    
-//         ],
-//         [
-//             "item" => "RTX 11",
-//             "price" => 1000    
-//         ],
-//         [
-//             "item" => "RTX 12",
-//             "price" => 1000    
-//         ],
-//     ]]);
-//     $items = session()->get('cart');
-//     return $items   ;
-// });
+Route::get('/amir', function () {
+    session(['cart' => [
+        [
+            "item" => "RTX 10",
+            "price" => 1000    
+        ],
+        [
+            "item" => "RTX 11",
+            "price" => 1000    
+        ],
+        [
+            "item" => "RTX 12",
+            "price" => 1000    
+        ],
+    ]]);
+    $items = session()->get('cart');
+    return $items   ;
+});
 
 
 Route::get('/', function () {
